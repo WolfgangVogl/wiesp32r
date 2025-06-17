@@ -1,0 +1,21 @@
+---
+BasedOnStyle: Mozilla 
+IndentWidth: 4
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: false
+BreakAfterReturnType: Automatic
+FixNamespaceComments: true
+Cpp11BracedListStyle: true
+MaxEmptyLinesToKeep: 1
+AllowShortBlocksOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Empty
+---
+Language: Cpp
+ColumnLimit: 120
+---
+Language: JavaScript
+ColumnLimit: 100
+#...
