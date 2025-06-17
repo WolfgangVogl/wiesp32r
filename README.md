@@ -1,15 +1,40 @@
-# Wiesp32r
+# Wiesp32r  
+**Version 0.0.0a**  
 
-**Wiesp32r** is an access control system using a Wiegand reader and an ESP32 microcontroller.
+**Wiesp32r** is an access control system leveraging a Wiegand reader and an ESP32 microcontroller to deliver flexible and customizable access management.  
 
-WORK IN PROGRESS!
+🚧 **WORK IN PROGRESS! NOT PRODUCTION READY** 🚧  
 
-Stay tuned for updates and additional features in future versions!  
 
 ## Features  
-- Supports Wiegand readers for access control (using the Wiegand Protocal Library for Arduino (matjack1))
-- Powered by the ESP32 microcontroller
-- Asynchronous web server for configuration and monitoring (esp32async/EspAsyncWebserver and AsyncTCP)
+### Implemented  
+- **Wiegand Reader Support**: Utilizes the Wiegand Protocol Library for Arduino ([matjack1](https://github.com/matjack1/WiegandProtocol)).  
+- **ESP32-Powered**: Leverages the capabilities of the ESP32 microcontroller.  
+- **Asynchronous Web Server**: Configuration and monitoring using `ESPAsyncWebServer` and `AsyncTCP`.  
+- **Hotspot Mode**: Automatically creates a Wi-Fi hotspot if no known network is available.  
+
+### Planned Features  
+- **Web Interface Enhancements**:  
+  - Discover and connect to Wi-Fi networks with credential storage.  
+  - Set a custom password for the web interface.  
+- **Wi-Fi Opt-In via Jumper**: Allow manual activation of Wi-Fi capabilities using a hardware jumper.  
+- **User Account Management**:  
+  - Create and manage user accounts with access methods:  
+    - PIN-based access.  
+    - RFID-based access.  
+    - Combined PIN + RFID access.  
+  - Support for one-time access PIN codes.  
+
+### Potential Features (Under Consideration)  
+- **Access Event Notifications**:  
+  - Trigger external endpoints when access is granted.  
+  - Supported protocols:  
+    - HTTP requests (e.g., JSON payloads).  
+    - MQTT messaging.  
+- **Time-Based Access Control**:  
+  - Set time restrictions for user accounts and one-time PINs.  
+- **Advanced PIN Features**:  
+  - Use PIN codes for time-limited or conditional access.  
 
 ## Getting Started  
 ### Requirements  
@@ -26,17 +51,21 @@ Stay tuned for updates and additional features in future versions!
 4. Check the configuration (Pins, ...) (see [config.hpp](./src/config.hpp))
 5. Build and upload to your esp32
 
-## Licensing Information
+## Licensing  
 
-This project is licensed under the MIT License.f
+### Project License  
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for full details.  
 
-### Third-Party Dependencies
-The following libraries are used in this project and are licensed under the GNU Lesser General Public License (LGPL):
-- ESPAsyncWebServer (LGPL-3.0)
-- AsyncTCP (LGPL-3.0-or-later)
-- Wiegand Protocol Library for Arduino (LGPL-2.1-or-later)
+### Third-Party Licenses  
+This project includes the following third-party libraries:  
+- **[ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)**  
+  - Licensed under LGPL-3.0.
+- **[AsyncTCP](https://github.com/me-no-dev/AsyncTCP)**  
+  - Licensed under LGPL-3.0-or-later.
+- **[Wiegand Protocol Library for Arduino](https://github.com/matjack1/WiegandProtocol)**  
+  - Licensed under LGPL-2.1-or-later.
+- **[ArduinoFake](https://github.com/FabioBatSilva/ArduinoFake)**  
+  - Licensed under MIT
 
-The following libraries are used in this project and are licensed under the MIT License (MIT):
-- fabiobatsilva/ArduinoFake@^0.4.0
-
-For more details, see the [LICENSE](./LICENSE) file and [THIRD_PARTY_LICENSES](./THIRD_PARTY_LICENSES).
+See [THIRD_PARTY_LICENSES](./THIRD_PARTY_LICENSES).
+Refer to the respective repositories for more details on these licenses.  
