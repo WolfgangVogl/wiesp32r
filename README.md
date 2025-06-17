@@ -19,15 +19,16 @@ Stay tuned for updates and additional features in future versions!
 
 ### Setup  
 1. Clone this repository.  
-2. Install the required libraries via PlatformIO or your preferred development environment:
+2. Install the required libraries via PlatformIO or your preferred development environment (see [platformio.ini](./platformio.ini))
+3. Run Tests
    ```plaintext
-   matjack1/Wiegand Protocol Library for Arduino - for esp-rfid@^1.1.1  
-   esp32async/ESPAsyncWebServer@^3.7.8  
-   esp32async/AsyncTCP@^3.4.4  
+   pio run -e native
+4. Check the configuration (Pins, ...) (see [config.hpp](./src/config.hpp))
+5. Build and upload to your esp32
 
 ## Licensing Information
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License.f
 
 ### Third-Party Dependencies
 The following libraries are used in this project and are licensed under the GNU Lesser General Public License (LGPL):
