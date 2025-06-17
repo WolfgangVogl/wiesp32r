@@ -1,0 +1,22 @@
+# Third-Party Licenses
+
+## ESPAsyncWebServer 3.7.8
+Licensed under LGPL-3.0.
+Repository: https://github.com/ESP32Async/ESPAsyncWebServer
+See the LICENSE file in the repository for details.
+
+## AsyncTCP 3.4.4
+Licensed under LGPL-3.0-or-later.
+Repository: https://github.com/ESP32Async/AsyncTCP
+See the LICENSE file in the repository for details.
+
+## Wiegand Protocol Library for Arduino
+Licensed under LGPL-2.1-or-later.
+Repository: https://github.com/matjack1/Wiegand-Protocol-Library-for-Arduino
+See the LICENSE file in the repository for details.
+
+## ArduinoFake 0.4.0
+LIcensed under MIT
+Repository: https://github.com/FabioBatSilva/ArduinoFake
+See the LICENSE file in the repository for details.
+https://github.com/FabioBatSilva/ArduinoFake?tab=MIT-1-ov-file#readme
